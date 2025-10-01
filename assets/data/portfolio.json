@@ -1,0 +1,151 @@
+{
+  "portfolios": [
+    {
+      "id": 1,
+      "title": "모던 라이프스타일 아파트",
+      "type": "리모델링 / 35평",
+      "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "description": "젊은 커플을 위한 모던하고 깔끔한 인테리어",
+      "details": {
+        "area": "35평",
+        "duration": "2개월",
+        "budget": "1,500만원",
+        "style": "모던",
+        "features": ["오픈 키친", "워크인 옷장", "발코니 확장"],
+        "client": "김○○님",
+        "location": "서울시 강남구",
+        "year": "2024"
+      },
+      "gallery": [
+        "images/portfolio/gallery/1_1.jpg",
+        "images/portfolio/gallery/1_2.jpg",
+        "images/portfolio/gallery/1_3.jpg"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "클래식 감성 주택",
+      "type": "신축 / 45평",
+      "image": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "description": "전통과 모던의 조화를 이룬 세련된 공간",
+      "details": {
+        "area": "45평",
+        "duration": "3개월",
+        "budget": "2,200만원",
+        "style": "클래식",
+        "features": ["한옥 요소", "원목 마감", "전통 정원"],
+        "client": "이○○님",
+        "location": "경기도 성남시",
+        "year": "2024"
+      },
+      "gallery": [
+        "images/portfolio/gallery/2_1.jpg",
+        "images/portfolio/gallery/2_2.jpg",
+        "images/portfolio/gallery/2_3.jpg"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "미니멀 오피스 공간",
+      "type": "사무실 / 25평",
+      "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "description": "효율적인 업무 환경을 위한 깔끔한 디자인",
+      "details": {
+        "area": "25평",
+        "duration": "1.5개월",
+        "budget": "800만원",
+        "style": "미니멀",
+        "features": ["오픈 데스크", "회의실", "휴게공간"],
+        "client": "박○○님",
+        "location": "서울시 마포구",
+        "year": "2024"
+      },
+      "gallery": [
+        "images/portfolio/gallery/3_1.jpg",
+        "images/portfolio/gallery/3_2.jpg",
+        "images/portfolio/gallery/3_3.jpg"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "가족 중심 펜트하우스",
+      "type": "리모델링 / 60평",
+      "image": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "description": "넓은 공간을 활용한 가족 친화적 인테리어",
+      "details": {
+        "area": "60평",
+        "duration": "4개월",
+        "budget": "3,500만원",
+        "style": "컨템포러리",
+        "features": ["루프탑 테라스", "키즈룸", "홈시어터"],
+        "client": "최○○님",
+        "location": "서울시 송파구",
+        "year": "2023"
+      },
+      "gallery": [
+        "images/portfolio/gallery/4_1.jpg",
+        "images/portfolio/gallery/4_2.jpg",
+        "images/portfolio/gallery/4_3.jpg"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "인더스트리얼 카페",
+      "type": "상가 / 30평",
+      "image": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "description": "독특한 분위기의 인더스트리얼 스타일 카페",
+      "details": {
+        "area": "30평",
+        "duration": "2개월",
+        "budget": "1,200만원",
+        "style": "인더스트리얼",
+        "features": ["노출 콘크리트", "메탈 디테일", "로프트 공간"],
+        "client": "정○○님",
+        "location": "서울시 홍대",
+        "year": "2023"
+      },
+      "gallery": [
+        "images/portfolio/gallery/5_1.jpg",
+        "images/portfolio/gallery/5_2.jpg",
+        "images/portfolio/gallery/5_3.jpg"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "스칸디나비안 원룸",
+      "type": "리모델링 / 20평",
+      "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "description": "따뜻하고 아늑한 스칸디나비안 스타일 원룸",
+      "details": {
+        "area": "20평",
+        "duration": "1개월",
+        "budget": "600만원",
+        "style": "스칸디나비안",
+        "features": ["원목 마감", "화이트 톤", "다기능 수납"],
+        "client": "한○○님",
+        "location": "서울시 서초구",
+        "year": "2023"
+      },
+      "gallery": [
+        "images/portfolio/gallery/6_1.jpg",
+        "images/portfolio/gallery/6_2.jpg",
+        "images/portfolio/gallery/6_3.jpg"
+      ]
+    }
+  ],
+  "statistics": {
+    "totalProjects": 500,
+    "satisfactionRate": 98,
+    "yearsExperience": 15,
+    "averageProjectTime": "2.5개월",
+    "averageBudget": "1,500만원"
+  },
+  "companyInfo": {
+    "name": "프로 인테리어",
+    "phone": "010-1234-5678",
+    "email": "contact@prointerior.co.kr",
+    "address": "서울시 강남구 테헤란로 123",
+    "businessHours": "평일 09:00-18:00, 토요일 09:00-15:00",
+    "license": "인테리어업 신고번호: 123-45-67890"
+  }
+}

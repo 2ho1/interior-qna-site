@@ -1,0 +1,118 @@
+<!-- EmailJS에서 사용할 HTML 이메일 템플릿 -->
+<!-- 이 내용을 EmailJS 템플릿 에디터에 복사해서 사용하세요 -->
+
+<div style="font-family: Arial, 'Malgun Gothic', sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f8f9fa;">
+    
+    <!-- 이메일 컨테이너 -->
+    <div style="background: #ffffff; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); overflow: hidden;">
+        
+        <!-- 헤더 -->
+        <div style="background: linear-gradient(135deg, #2C3E50, #3498DB); color: white; padding: 30px; text-align: center;">
+            <h1 style="margin: 0; font-size: 24px; font-weight: bold;">🏠 프로 인테리어</h1>
+            <p style="margin: 10px 0 0 0; opacity: 0.9; font-size: 14px;">15년 경력의 전문 인테리어 시공</p>
+        </div>
+
+        <!-- 본문 -->
+        <div style="padding: 30px;">
+            
+            <!-- 인사말 -->
+            <div style="font-size: 16px; margin-bottom: 25px; color: #2C3E50;">
+                안녕하세요!<br>
+                새로운 견적 문의가 접수되었습니다. 빠른 시일 내에 고객님께 연락드리겠습니다.
+            </div>
+
+            <!-- 고객 정보 -->
+            <div style="margin-bottom: 25px; border-left: 4px solid #E74C3C; padding-left: 15px;">
+                <div style="font-size: 18px; font-weight: bold; color: #2C3E50; margin-bottom: 15px;">
+                    👤 고객 정보
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                    <div style="background: #f8f9fa; padding: 12px; border-radius: 6px; border-left: 3px solid #3498DB;">
+                        <div style="font-weight: bold; color: #2C3E50; font-size: 13px; margin-bottom: 4px;">이름</div>
+                        <div style="color: #333; font-size: 14px;">{{customer_name}}</div>
+                    </div>
+                    <div style="background: #f8f9fa; padding: 12px; border-radius: 6px; border-left: 3px solid #3498DB;">
+                        <div style="font-weight: bold; color: #2C3E50; font-size: 13px; margin-bottom: 4px;">연락처</div>
+                        <div style="color: #333; font-size: 14px;">{{phone}}</div>
+                    </div>
+                </div>
+                <div style="background: #f8f9fa; padding: 12px; border-radius: 6px; border-left: 3px solid #3498DB; margin-top: 10px;">
+                    <div style="font-weight: bold; color: #2C3E50; font-size: 13px; margin-bottom: 4px;">주소</div>
+                    <div style="color: #333; font-size: 14px;">{{address}}</div>
+                </div>
+            </div>
+
+            <!-- 시공 정보 -->
+            <div style="margin-bottom: 25px; border-left: 4px solid #E74C3C; padding-left: 15px;">
+                <div style="font-size: 18px; font-weight: bold; color: #2C3E50; margin-bottom: 15px;">
+                    🏠 시공 정보
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                    <div style="background: #f8f9fa; padding: 12px; border-radius: 6px; border-left: 3px solid #3498DB;">
+                        <div style="font-weight: bold; color: #2C3E50; font-size: 13px; margin-bottom: 4px;">주거지 형태</div>
+                        <div style="color: #333; font-size: 14px;">{{property_type}}</div>
+                    </div>
+                    <div style="background: #f8f9fa; padding: 12px; border-radius: 6px; border-left: 3px solid #3498DB;">
+                        <div style="font-weight: bold; color: #2C3E50; font-size: 13px; margin-bottom: 4px;">평수</div>
+                        <div style="color: #333; font-size: 14px;">{{area}}평</div>
+                    </div>
+                    <div style="background: #f8f9fa; padding: 12px; border-radius: 6px; border-left: 3px solid #3498DB;">
+                        <div style="font-weight: bold; color: #2C3E50; font-size: 13px; margin-bottom: 4px;">예상 예산</div>
+                        <div style="color: #333; font-size: 14px;">{{budget}}</div>
+                    </div>
+                    <div style="background: #f8f9fa; padding: 12px; border-radius: 6px; border-left: 3px solid #3498DB;">
+                        <div style="font-weight: bold; color: #2C3E50; font-size: 13px; margin-bottom: 4px;">희망 시공일</div>
+                        <div style="color: #333; font-size: 14px;">{{preferred_date}}</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 요청사항 -->
+            <div style="margin-bottom: 25px; border-left: 4px solid #E74C3C; padding-left: 15px;">
+                <div style="font-size: 18px; font-weight: bold; color: #2C3E50; margin-bottom: 15px;">
+                    💬 요청사항
+                </div>
+                <div style="background: #f8f9fa; padding: 15px; border-radius: 6px; border-left: 3px solid #E74C3C; font-style: italic; color: #555;">
+                    {{details}}
+                </div>
+            </div>
+
+            <!-- 우선 처리 알림 -->
+            <div style="background: #fff3cd; border: 1px solid #ffeaa7; border-radius: 6px; padding: 15px; margin: 20px 0; text-align: center;">
+                <strong style="color: #856404;">🚨 우선 처리 대상</strong><br>
+                고객님이 빠른 연락을 원하시므로 24시간 내 연락드리겠습니다.
+            </div>
+
+            <!-- 문의 정보 -->
+            <div style="margin-bottom: 25px; border-left: 4px solid #E74C3C; padding-left: 15px;">
+                <div style="font-size: 18px; font-weight: bold; color: #2C3E50; margin-bottom: 15px;">
+                    ℹ️ 문의 정보
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                    <div style="background: #f8f9fa; padding: 12px; border-radius: 6px; border-left: 3px solid #3498DB;">
+                        <div style="font-weight: bold; color: #2C3E50; font-size: 13px; margin-bottom: 4px;">문의 시간</div>
+                        <div style="color: #333; font-size: 14px;">{{submit_time}}</div>
+                    </div>
+                    <div style="background: #f8f9fa; padding: 12px; border-radius: 6px; border-left: 3px solid #3498DB;">
+                        <div style="font-weight: bold; color: #2C3E50; font-size: 13px; margin-bottom: 4px;">브라우저</div>
+                        <div style="color: #333; font-size: 14px;">{{user_agent}}</div>
+                    </div>
+                </div>
+                <div style="background: #f8f9fa; padding: 12px; border-radius: 6px; border-left: 3px solid #3498DB; margin-top: 10px;">
+                    <div style="font-weight: bold; color: #2C3E50; font-size: 13px; margin-bottom: 4px;">참조 사이트</div>
+                    <div style="color: #333; font-size: 14px;">{{referrer}}</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 푸터 -->
+        <div style="background: #2C3E50; color: white; padding: 20px; text-align: center; font-size: 14px;">
+            <div>프로 인테리어 | 15년 경력의 전문 시공</div>
+            <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #34495e;">
+                📞 전화: 010-1234-5678<br>
+                ✉️ 이메일: <a href="mailto:contact@prointerior.co.kr" style="color: #3498DB; text-decoration: none;">contact@prointerior.co.kr</a><br>
+                🏢 주소: 서울시 강남구 테헤란로 123
+            </div>
+        </div>
+    </div>
+</div>

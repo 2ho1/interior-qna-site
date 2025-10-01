@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>견적 문의 이메일 템플릿</title>
+    <style>
+        body {
+            font-family: 'Arial', 'Malgun Gothic', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        .email-container {
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #2C3E50, #3498DB);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .header p {
+            margin: 10px 0 0 0;
+            opacity: 0.9;
+            font-size: 14px;
+        }
+        .content {
+            padding: 30px;
+        }
+        .greeting {
+            font-size: 16px;
+            margin-bottom: 25px;
+            color: #2C3E50;
+        }
+        .section {
+            margin-bottom: 25px;
+            border-left: 4px solid #E74C3C;
+            padding-left: 15px;
+        }
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #2C3E50;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .section-title::before {
+            content: "📋";
+            margin-right: 8px;
+            font-size: 16px;
+        }
+        .customer-section .section-title::before {
+            content: "👤";
+        }
+        .property-section .section-title::before {
+            content: "🏠";
+        }
+        .details-section .section-title::before {
+            content: "💬";
+        }
+        .info-section .section-title::before {
+            content: "ℹ️";
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        .info-item {
+            background: #f8f9fa;
+            padding: 12px;
+            border-radius: 6px;
+            border-left: 3px solid #3498DB;
+        }
+        .info-label {
+            font-weight: bold;
+            color: #2C3E50;
+            font-size: 13px;
+            margin-bottom: 4px;
+        }
+        .info-value {
+            color: #333;
+            font-size: 14px;
+        }
+        .details-box {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 3px solid #E74C3C;
+            font-style: italic;
+            color: #555;
+        }
+        .priority-notice {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .priority-notice strong {
+            color: #856404;
+        }
+        .footer {
+            background: #2C3E50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .contact-info {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #34495e;
+        }
+        .contact-info a {
+            color: #3498DB;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+            body {
+                padding: 10px;
+            }
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <!-- 헤더 -->
+        <div class="header">
+            <h1>🏠 프로 인테리어</h1>
+            <p>15년 경력의 전문 인테리어 시공</p>
+        </div>
+
+        <!-- 본문 -->
+        <div class="content">
+            <!-- 인사말 -->
+            <div class="greeting">
+                안녕하세요!<br>
+                새로운 견적 문의가 접수되었습니다. 빠른 시일 내에 고객님께 연락드리겠습니다.
+            </div>
+
+            <!-- 고객 정보 -->
+            <div class="section customer-section">
+                <div class="section-title">고객 정보</div>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="info-label">이름</div>
+                        <div class="info-value">{{customer_name}}</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">연락처</div>
+                        <div class="info-value">{{phone}}</div>
+                    </div>
+                </div>
+                <div class="info-item" style="margin-top: 10px;">
+                    <div class="info-label">주소</div>
+                    <div class="info-value">{{address}}</div>
+                </div>
+            </div>
+
+            <!-- 시공 정보 -->
+            <div class="section property-section">
+                <div class="section-title">시공 정보</div>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="info-label">주거지 형태</div>
+                        <div class="info-value">{{property_type}}</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">평수</div>
+                        <div class="info-value">{{area}}평</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">예상 예산</div>
+                        <div class="info-value">{{budget}}</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">희망 시공일</div>
+                        <div class="info-value">{{preferred_date}}</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 요청사항 -->
+            <div class="section details-section">
+                <div class="section-title">요청사항</div>
+                <div class="details-box">
+                    {{details}}
+                </div>
+            </div>
+
+            <!-- 우선 처리 알림 -->
+            <div class="priority-notice">
+                <strong>🚨 우선 처리 대상</strong><br>
+                고객님이 빠른 연락을 원하시므로 24시간 내 연락드리겠습니다.
+            </div>
+
+            <!-- 문의 정보 -->
+            <div class="section info-section">
+                <div class="section-title">문의 정보</div>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="info-label">문의 시간</div>
+                        <div class="info-value">{{submit_time}}</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">브라우저</div>
+                        <div class="info-value">{{user_agent}}</div>
+                    </div>
+                </div>
+                <div class="info-item" style="margin-top: 10px;">
+                    <div class="info-label">참조 사이트</div>
+                    <div class="info-value">{{referrer}}</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 푸터 -->
+        <div class="footer">
+            <div>프로 인테리어 | 15년 경력의 전문 시공</div>
+            <div class="contact-info">
+                📞 전화: 010-1234-5678<br>
+                ✉️ 이메일: <a href="mailto:contact@prointerior.co.kr">contact@prointerior.co.kr</a><br>
+                🏢 주소: 서울시 강남구 테헤란로 123
+            </div>
+        </div>
+    </div>
+</body>
+</html>
